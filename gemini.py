@@ -25,7 +25,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 model = genai.GenerativeModel(MODEL_NAME)
 
-@app.on_message(filters.command("gem"))
+@app.on_message(filters.command("vlo"))
 async def gemi_handler(client: Client, message: Message):
     loading_message = None
     try:
